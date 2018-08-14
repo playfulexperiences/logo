@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Playful Experiences 2018</title>
+    <style>
+      @font-face {
+          font-family: 'multicolore_regular';
+          src: url('fonts/multicolore-webfont.woff2') format('woff2'),
+              url('fonts/multicolore-webfont.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      body {
+        font-family: 'multicolore_regular', sans-serif;
+        text-transform: uppercase;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #231F20;
+      }
+
+      #logo-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+      }
+
+      #logo {
+        display: block;
+        position: relative;
+        width: 90%;
+        padding-top: 30%;
+        max-width: 800px;
+      }
+
+      .link {
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        /* color: #558; */
+        color: #aac;
+      }
+
+      .link p {
+        margin: 0;
+        padding: 0;
+      }
+
+      @media screen and (max-width: 900px) {
+        #logo {
+          width: 90%;
+          padding-top: 40%;
+        }
+      }
+
+      @media screen and (max-width: 750px) {
+        .link {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+      <div id="logo-wrap">
+        <a id="logo" target="_blank" href="https://www.facebook.com/events/188495395358508/"></a>
+        <a class="link" target="_blank" href="https://www.facebook.com/events/188495395358508/"><p>MA IGPED Degree Show<br/>September 20 &ndash; 23</p></a>
+      </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
