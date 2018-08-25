@@ -1,8 +1,6 @@
-setTimeout(function () {
-  create(document.getElementById('logo'))
-}, 500)
+window.createPlayfulExperiencesLogo = create
 
-function create (container, hoverParent) {
+function create (container, hoverParent, uri) {
   var canvas = container.appendChild(document.createElement('canvas'))
   var svgToGpu = require('./lib/svg-to-gpu')
   var ortho = require('gl-mat4/ortho')
@@ -33,7 +31,7 @@ function create (container, hoverParent) {
   }, false)
 
   xhr({
-    uri: 'logo-test.svg',
+    uri: uri || 'logo-test.svg',
     responseType: 'document'
   }, function (err, res, body) {
     if (err) throw err
