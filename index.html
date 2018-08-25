@@ -43,39 +43,25 @@
         max-width: 800px;
       }
 
-      .link {
-        font-size: 1.5rem;
-        text-align: center;
-        text-decoration: none;
-        /* color: #558; */
-        color: #aac;
-      }
-
-      .link p {
-        margin: 0;
-        padding: 0;
-      }
-
       @media screen and (max-width: 900px) {
         #logo {
           width: 90%;
           padding-top: 40%;
         }
       }
-
-      @media screen and (max-width: 750px) {
-        .link {
-          font-size: 1rem;
-        }
-      }
     </style>
   </head>
   <body>
-
-      <div id="logo-wrap">
-        <a id="logo" target="_blank" href="https://www.facebook.com/events/188495395358508/"></a>
-        <a class="link" target="_blank" href="https://www.facebook.com/events/188495395358508/"><p>MA IGPED Degree Show<br/>September 20 &ndash; 23</p></a>
-      </div>
+    <div id="logo-wrap">
+      <a id="logo" target="_blank" href="https://www.facebook.com/events/188495395358508/"></a>
+    </div>
     <script src="bundle.js"></script>
+    <script>
+      createPlayfulExperiencesLogo(
+        document.getElementById('logo'),
+        document.getElementById('logo'),
+        'logo-test.svg'
+      )
+    </script>
   </body>
 </html>
