@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "budo index.js:bundle.js",
-    "bundle": "browserify index.js -o bundle.js"
+    "bundle": "browserify -p tinyify index.js -o bundle.js"
   },
   "browserify": {
     "transform": "glslify"
